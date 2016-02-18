@@ -6,7 +6,7 @@ Author: [Mauro Cortellazzi](https://github.com/maocorte)
 
 ## Setup
 
-- To download the Cassandra service folder, run below
+- To download the Tachyon service folder, run below
 
 ```
 VERSION=`hdp-select status hadoop-client | sed 's/hadoop-client - \([0-9]\.[0-9]\).*/\1/'`
@@ -28,7 +28,7 @@ sudo service ambari-server restart
 
 ## Remove service
 
-- To remove the Cassandra service:
+- To remove the Tachyon service:
   - Stop the service via Ambari
   - Unregister the service
 
