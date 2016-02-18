@@ -33,7 +33,7 @@ sudo service ambari-server restart
   - Unregister the service
 
 ```
-export SERVICE=Tachyon
+export SERVICE=TACHYON
 export PASSWORD=admin
 export AMBARI_HOST=localhost
 #detect name of cluster

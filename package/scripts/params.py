@@ -50,11 +50,11 @@ ambari_server = config['clusterHostInfo']['ambari_server_host']
 
 # tachyon addresses
 
-#tachyon_master = config['clusterHostInfo']['tachyon_master_hosts'][0]
-if config['clusterHostInfo']['hostname'] in config['clusterHostInfo']['tachyon_master_hosts']:
-  tachyon_master = config['clusterHostInfo']['hostname']
-else:
-  tachyon_master = config['clusterHostInfo']['tachyon_master_hosts'][0]
+tachyon_master = config['clusterHostInfo']['tachyon_master_hosts'][0]
+#if config['clusterHostInfo']['hostname'] in config['clusterHostInfo']['tachyon_master_hosts']:
+#  tachyon_master = config['clusterHostInfo']['hostname']
+#else:
+#  tachyon_master = config['clusterHostInfo']['tachyon_master_hosts'][0]
 
 tachyon_workers = config['clusterHostInfo']['tachyon_slave_hosts']
 
