@@ -37,19 +37,19 @@
   </property>
 
   <property>
+    <name>tachyon_user</name>
+    <value>tachyon</value>
+    <property-type>USER</property-type>
+    <description>Tachyon Service Account User</description>
+  </property>
+
+  <property>
     <name>tachyon.usezookeeper</name>
     <description>Use zookeeper to grant fault tollerance</description>
     <value>true</value>
     <value-attributes>
       <type>boolean</type>
     </value-attributes>
-  </property>
-
-  <property>
-    <name>tachyon_user</name>
-    <value>tachyon</value>
-    <property-type>USER</property-type>
-    <description>Tachyon Service Account User</description>
   </property>
 
 </configuration>

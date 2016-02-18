@@ -21,7 +21,6 @@
   <property require-input="true">
     <name>tachyon.underfs.address</name>
     <description>Tachyon UnderFS Address</description>
-    <!--<value>hdfs://0.0.0.0:8020</value>-->
     <value>/var/lib/tachyon</value>
   </property>
 
