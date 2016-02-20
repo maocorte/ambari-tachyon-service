@@ -49,23 +49,5 @@ user_group = config['configurations']['cluster-env']['user_group']
 ambari_server = config['clusterHostInfo']['ambari_server_host']
 
 # tachyon addresses
-
 tachyon_master = config['clusterHostInfo']['tachyon_master_hosts'][0]
-#if config['clusterHostInfo']['hostname'] in config['clusterHostInfo']['tachyon_master_hosts']:
-#  tachyon_master = config['clusterHostInfo']['hostname']
-#else:
-#  tachyon_master = config['clusterHostInfo']['tachyon_master_hosts'][0]
-
 tachyon_workers = config['clusterHostInfo']['tachyon_slave_hosts']
-
-# zookeeper infos
-zookeeper_hosts = ''
-if 'zookeeper_hosts' in config['clusterHostInfo']:
-  zookeeper_hosts_list = config['clusterHostInfo']['zookeeper_hosts']
-  if len(zookeeper_hosts_list) > 0:
-      zookeeper_hosts = ':2181,'.join(zookeeper_hosts_list) + ':2181'
-
-use_zookeeper = False
-if zookeeper_hosts != '' and config['configurations']['tachyon-env']['tachyon.usezookeeper'] == 'True':
-  use_zookeeper = True
-

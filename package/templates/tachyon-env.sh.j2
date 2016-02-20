@@ -124,10 +124,6 @@ export TACHYON_JAVA_OPTS+="
   -Djava.net.preferIPv4Stack=true
   -Dtachyon.user.file.writetype.default=CACHE_THROUGH
   -Dtachyon.master.journal.folder=${TACHYON_UNDERFS_ADDRESS}/tachyon-journal/
-{% if use_zookeeper == True -%}
-  -Dtachyon.usezookeeper={{ use_zookeeper }}
-  -Dtachyon.zookeeper.address={{ zookeeper_hosts }}
-{% endif %}
 "
 
 

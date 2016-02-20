@@ -37,9 +37,9 @@ class Tachyon(Script):
             user=params.tachyon_user
         )
       else:
-        hadoop_tmp_file_md5 = hashlib.md5(open(params.tachyon_tmp_file, "rb").read()).hexdigest()
+        tmp_file_md5 = hashlib.md5(open(params.tachyon_tmp_file, "rb").read()).hexdigest()
 
-        if not hadoop_tmp_file_md5 == params.binary_file_md5:
+        if not tmp_file_md5 == params.binary_file_md5:
           Execute(
               'rm -f '+params.tachyon_tmp_file,
               user=params.tachyon_user

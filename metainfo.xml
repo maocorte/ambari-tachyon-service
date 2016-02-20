@@ -55,6 +55,9 @@
                   <package>
                     <name>wget</name>
                   </package>
+                  <package>
+                    <name>java-1.7.0-openjdk-devel</name>
+                  </package>
                 </packages>
               </osSpecific>
             </osSpecifics>

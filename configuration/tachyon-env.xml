@@ -21,7 +21,7 @@
   <property>
     <name>tachyon.lib.dir</name>
     <description>Tachyon Installation Directory</description>
-    <value>/opt/tachyon</value>
+    <value>/opt/tachyon/</value>
   </property>
 
   <property>
@@ -33,7 +33,7 @@
   <property>
     <name>tachyon.pid.dir</name>
     <description>Tachyon pid Directory</description>
-    <value>/var/run/tachyon</value>
+    <value>/var/run/tachyon/</value>
   </property>
 
   <property>
@@ -41,15 +41,6 @@
     <value>tachyon</value>
     <property-type>USER</property-type>
     <description>Tachyon Service Account User</description>
-  </property>
-
-  <property>
-    <name>tachyon.usezookeeper</name>
-    <description>Use zookeeper to grant fault tollerance</description>
-    <value>true</value>
-    <value-attributes>
-      <type>boolean</type>
-    </value-attributes>
   </property>
 
 </configuration>
